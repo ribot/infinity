@@ -1,5 +1,5 @@
 //     (c) 2012 Airbnb, Inc.
-//     
+//
 //     infinity.js may be freely distributed under the terms of the BSD
 //     license. For all licensing information, details, and documention:
 //     http://airbnb.github.com/infinity
@@ -91,7 +91,7 @@
     this.pages = [];
     this.startIndex = 0;
 
-    this.$scrollParent = this.useElementScroll ? $el : $window;
+    this.$scrollParent = this.useElementScroll ? $el.parent() : $window;
 
     DOMEvent.attach(this);
   }
